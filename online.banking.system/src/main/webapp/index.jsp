@@ -27,7 +27,7 @@ function dil(form)
    {
 	   if(document.F1.phone.value >9999999999 )
 	   {
-		 alert("ye kabhi nhi aayegi")
+		 alert("Please enter your phone number")
 		 document.F1.phone.value=""
 		 document.F1.phone.focus()
          return false   
