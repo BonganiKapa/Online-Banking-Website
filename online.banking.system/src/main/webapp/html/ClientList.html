@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="angular/anguar.js"></script>
+<meta charset="ISO-8859-1">
+<title>Client List</title>
+</head>
+<body>
+
+<section *ngIf="client" class = "panel-body">
+	<table class = "table-striped table-bordered table-hover table-condensed">
+		<tr *ngFor="let client of client">
+			<td><a href="#" [routerLink]="['/client', client.clientIndex]">
+					{{client.firstName}} </a>&nbsp;&nbsp;</td>
+			<td><a href="#" [routerLink]="['/client/edit', client.clientIndex]">
+				Edit </a></td>
+	</table>
+</section>
+ 
+
+</body>
+</html>

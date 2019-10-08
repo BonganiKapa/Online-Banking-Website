@@ -17,18 +17,19 @@
 			<td>
 				<form method="post" action="Register" >
 				  <table cellspacing="5" cellpadding="3">	
-				
-					<tr><td>NAME:</td><td> <input type="text" name="name"/></td></tr>
-					<tr><td>SURNAME:</td><td> <input type="text" name="surname"/></td></tr>
-					<tr><td>ID NUMBER:</td><td> <input type="text" name="idNum"/></td></tr>
-					<tr><td>EMAIL:</td><td> <input type="text" name="email"/></td></tr>
-					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
-					<tr><td>RE-PASSWORD:</td><td> <input type="password" name="repassword"/></td></tr>
-					<!-- Gender:<br/><br/>
-					Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"/><br/><br/> -->
-					<tr><td>ADDRESS:</td><td> <input type="text" name="address"/></td></tr>
-					<tr><td>PHONE:</td><td> <input type="text" name="phone"/></td></tr>
-					<tr><td>AMOUNT:</td><td> <input type="text" name="amount"/></td></tr>
+					
+					GENDER: 
+					<input type="radio" ng-model="myVar" value="female">FEMALE
+					<input type="radio" ng-model="myVar" value="male">MALE				
+					<tr><td>NAME:</td><td> <input type="text" name="name" placeholder="Name(s)"/></td></tr>
+					<tr><td>SURNAME:</td><td> <input type="text" name="surname" placeholder="Surname"/></td></tr>
+					<tr><td>ID NUMBER:</td><td> <input type="text" name="idNum" placeholder="ID Number"/></td></tr>
+					<tr><td>EMAIL:</td><td> <input type="text" name="email" placeholder="Email"/></td></tr>
+					<tr><td>PASSWORD:</td><td> <input type="password" name="password" placeholder="Password"/></td></tr>
+					<tr><td>RE-PASSWORD:</td><td> <input type="password" name="repassword" placeholder="Password"/></td></tr>
+					<tr><td>ADDRESS:</td><td> <input type="text" name="address" placeholder="Address"/></td></tr>
+					<tr><td>PHONE:</td><td> <input type="text" name="phone" placeholder="Phone"/></td></tr>
+					<tr><td>AMOUNT:</td><td> <input type="text" name="amount" placeholder="Ammount"/></td></tr>
 					<tr><td></td><td><input type="submit" value="Submit"/>
 					
 					<INPUT TYPE=RESET VALUE="Clear"></td></tr>

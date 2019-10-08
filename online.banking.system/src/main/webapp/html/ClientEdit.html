@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="angular/anguar.js"></script>
+<meta charset="ISO-8859-1">
+<title>Client Edit</title>
+</head>
+<body>
+
+
+<section *ngIf="client" class="panel">
+	<div class = "panel-body">
+		<h4><i [class]="client.gender==='female' ? 'ion-female' : (client.gender==='male' ? 'ion-male' : 'ion-transgender')"></i> {{client.name}}</h4>
+		<i class="ion-android-calendar"></i> {{client.birthyear}}
+		<br/><strong>Name: </strong>{{client.name}} <strong>Surname: </strong>{{client.lastName}}
+		<br/><strong>Address: </strong>{{client.address}} <strong>Phone: </strong>{{client.phone}}
+		<br/><strong>Email: </strong>{{client.email}}
+		<br/><button type="button" class="btn" (click)="gotoEdit()">Edit</button>
+	</div>
+</section>
+
+
+</body>
+</html>

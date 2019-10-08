@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="angular/anguar.js"></script>
+<title>Client Display</title>
+</head>
+<body>
+
+<section *ngIf="client" class="panel">
+	<div class = "panel-body">
+		<h4><i [class]="client.gender==='female' ? 'ion-female' : (client.gender==='male' ? 'ion-male' : 'ion-transgender')"></i> {{client.name}}</h4>
+		<i class="ion-android-calendar"></i> {{client.birthyear}}
+		<br/><strong>Name: </strong>{{client.name}} <strong>Surname: </strong>{{client.lastName}}
+		<br/><strong>Address: </strong>{{client.address}} <strong>Phone: </strong>{{client.phone}}
+		<br/><strong>Email: </strong>{{client.email}}
+		<br/><strong>Account Type: </strong>{{acc.type}} <strong>Account Number: </strong>{{acc.accNum}}
+		<br/><button type="button" class="btn" src="http://localhost:8080/online.banking.system/html/ClientEdit.html">Edit</button>
+	</div>
+</section>
+
+
+
+
+</body>
+</html>
