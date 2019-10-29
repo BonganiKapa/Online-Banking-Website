@@ -1,7 +1,5 @@
 package system.onlinebanking.bean;
 
-import system.onlinebanking.enums.Gender;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;

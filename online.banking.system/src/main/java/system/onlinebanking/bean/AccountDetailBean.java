@@ -12,49 +12,56 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import system.onlinebanking.calculations.Balance;
+import system.onlinebanking.calculations.Deposit;
+import system.onlinebanking.calculations.Transfer;
+import system.onlinebanking.calculations.Withdrawals;
+
 @Entity
 @Table(name = "Client_Account")
-public class AccountDetailBean implements Serializable{
+public class AccountDetailBean implements Serializable {
 	
-	@Id 
+	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "account_index")
 	private int id;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "client_index")
 	private ClientDetailBean cdb;
-	
+
+	@Column(name = "type")
+	private String type;
+
 	@Column(name = "account_number")
 	private int accNum;
-	
+
 	@Column(name = "balance")
-	private BigDecimal blnce;
-	
+	private Balance blnce;
+
 	@Column(name = "withdrawals")
-	private BigDecimal withdraw;
-	
+	private Withdrawals withdraw;
+
 	@Column(name = "deposit")
-	private BigDecimal dpst;
-	
+	private Deposit dpst;
+
 	@Column(name = "transfer")
-	private BigDecimal tf;
-	
+	private Transfer tf;
+
 	@Column(name = "transactions")
 	private BigDecimal taHistory;
-	
-	
 
 	public AccountDetailBean() {
 		super();
 	}
+	
 
-
-	public AccountDetailBean(int id, ClientDetailBean cdb, int accNum, BigDecimal blnce, BigDecimal withdraw,
-			BigDecimal dpst, BigDecimal tf, BigDecimal taHistory) {
+	public AccountDetailBean(int id, ClientDetailBean cdb, String type, int accNum, Balance blnce,
+			Withdrawals withdraw, Deposit dpst, Transfer tf, BigDecimal taHistory) {
 		super();
 		this.id = id;
 		this.cdb = cdb;
+		this.type = type;
 		this.accNum = accNum;
 		this.blnce = blnce;
 		this.withdraw = withdraw;
@@ -62,102 +69,79 @@ public class AccountDetailBean implements Serializable{
 		this.tf = tf;
 		this.taHistory = taHistory;
 	}
-	
+
 
 	public int getId() {
 		return id;
 	}
 
-
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
-
 
 	public ClientDetailBean getCdb() {
 		return cdb;
 	}
 
-
-
 	public void setCdb(ClientDetailBean cdb) {
 		this.cdb = cdb;
 	}
-
-
 
 	public int getAccNum() {
 		return accNum;
 	}
 
-
-
 	public void setAccNum(int accNum) {
 		this.accNum = accNum;
 	}
 
-
-
-	public BigDecimal getBlnce() {
+	public Balance getBlnce() {
 		return blnce;
 	}
 
-
-
-	public void setBlnce(BigDecimal blnce) {
+	public void setBlnce(Balance blnce) {
 		this.blnce = blnce;
 	}
 
-
-
-	public BigDecimal getWithdraw() {
+	public Withdrawals getWithdraw() {
 		return withdraw;
 	}
 
-
-
-	public void setWithdraw(BigDecimal withdraw) {
+	public void setWithdraw(Withdrawals withdraw) {
 		this.withdraw = withdraw;
 	}
 
-
-
-	public BigDecimal getDpst() {
+	public Deposit getDpst() {
 		return dpst;
 	}
 
-
-
-	public void setDpst(BigDecimal dpst) {
+	public void setDpst(Deposit dpst) {
 		this.dpst = dpst;
 	}
 
-
-
-	public BigDecimal getTf() {
+	public Transfer getTf() {
 		return tf;
 	}
 
-
-
-	public void setTf(BigDecimal tf) {
+	public void setTf(Transfer tf) {
 		this.tf = tf;
 	}
-
-
 
 	public BigDecimal getTaHistory() {
 		return taHistory;
 	}
 
-
-
 	public void setTaHistory(BigDecimal taHistory) {
 		this.taHistory = taHistory;
 	}
 
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
 
 
 	@Override
@@ -171,9 +155,11 @@ public class AccountDetailBean implements Serializable{
 		result = prime * result + id;
 		result = prime * result + ((taHistory == null) ? 0 : taHistory.hashCode());
 		result = prime * result + ((tf == null) ? 0 : tf.hashCode());
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		result = prime * result + ((withdraw == null) ? 0 : withdraw.hashCode());
 		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -213,6 +199,11 @@ public class AccountDetailBean implements Serializable{
 				return false;
 		} else if (!tf.equals(other.tf))
 			return false;
+		if (type == null) {
+			if (other.type != null)
+				return false;
+		} else if (!type.equals(other.type))
+			return false;
 		if (withdraw == null) {
 			if (other.withdraw != null)
 				return false;
@@ -220,4 +211,6 @@ public class AccountDetailBean implements Serializable{
 			return false;
 		return true;
 	}
+
+	
 }

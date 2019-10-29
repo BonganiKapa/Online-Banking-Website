@@ -10,3 +10,12 @@ export interface ClientDetailBean{
 	gender: String;
 	password: String;
 }
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope){
+	
+	$scope.firstName = firstName;
+	$scope.lastName = lastName;
+	$scope. = firstName;
+	$scope.firstName = firstName;
+	$scope.firstName = firstName;
+})

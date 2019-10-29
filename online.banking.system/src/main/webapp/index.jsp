@@ -24,38 +24,26 @@ var sds = document.getElementById("dum");
 <div id="header">
 	<h1>First National Bank<span class="style1"></span></h1>
     <h2>How can we help you</h2>
-    <A href="index.html"><img src="images/146651.jpg"></IMG></A>	
+   <!-- <A href="index.html"><img src="images/146651.jpg" style="width:900px;height:350px;"></IMG></A> --> 
 </div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/adjacent_Cards.png" alt="Los Angeles">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="..." alt="First slide">
     </div>
-
-    <div class="item">
-      <img src="images/fnb-banner.png" alt="Chicago">
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/fnb-banner.png" alt="Second slide">
     </div>
-
-    <div class="item">
-      <img src="images/slow02.jpg" alt="New York">
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/slow02.jpg" alt="Third slide">
     </div>
   </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -67,6 +55,8 @@ var sds = document.getElementById("dum");
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
+    <li><a href="http://localhost:8080/online.banking.system/html/ClientDetailsDisplay.html">SEARCH</a></li>
+    <li><a href="http://localhost:8080/online.banking.system/html/Login.html">SIGN IN</a></li>
     <li><a href="about.jsp">ABOUT US</a></li>
     </ul>
 </div>

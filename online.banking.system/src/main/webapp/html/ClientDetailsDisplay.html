@@ -1,26 +1,96 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta charset="ISO-8859-1">
-<script src="angular/anguar.js"></script>
-<title>Client Display</title>
+
+<title>Client Search and Display</title>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"
+	type="text/javascript"></script>
+
+<script type="text/javascript">
+	var app = angular.module("AngularfilterApp", []);
+
+	app.controller("filterctrl", function($scope) {
+
+		$scope.users = [ {
+
+			name : "Madhav" 
+			
+			surname : "Sai",
+
+			age : 11
+
+		}, {
+
+			name : "Suresh" 
+			
+			surname : "Dasari",
+
+			age : 29
+
+		}, {
+
+			name : "Rohini" 
+			
+			surname : "Alavala",
+
+			age : 29
+
+		}, {
+
+			name : "Praveen" 
+			
+			surname : "Kumar",
+
+			age : 24
+
+		} ];
+
+	});
+</script>
+
 </head>
-<body>
 
-<section *ngIf="client" class="panel">
-	<div class = "panel-body">
-		<h4><i [class]="client.gender==='female' ? 'ion-female' : (client.gender==='male' ? 'ion-male' : 'ion-transgender')"></i> {{client.name}}</h4>
-		<i class="ion-android-calendar"></i> {{client.birthyear}}
-		<br/><strong>Name: </strong>{{client.name}} <strong>Surname: </strong>{{client.lastName}}
-		<br/><strong>Address: </strong>{{client.address}} <strong>Phone: </strong>{{client.phone}}
-		<br/><strong>Email: </strong>{{client.email}}
-		<br/><strong>Account Type: </strong>{{acc.type}} <strong>Account Number: </strong>{{acc.accNum}}
-		<br/><button type="button" class="btn" src="http://localhost:8080/online.banking.system/html/ClientEdit.html">Edit</button>
+<body ng-app="AngularfilterApp">
+
+	<div ng-controller="filterctrl">
+
+		Only Name to Filter:<input ng-model="searchtxt.name" type="text"
+			placeholder="Enter Only Name"><br />
+		<br />Only Surname to Filter:<input ng-model="searchtxt.surname" type="text"
+			placeholder="Enter Only surname"><br />
+		<br /> Only Age to Filter:<input ng-model="searchtxt.age" type="text"
+			placeholder="Enter Only Age"><br />
+		<br />
+
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Surname</th>
+				<th>Age</th>
+				<th>ID Number</th>
+				<th>Account Number</th>
+				
+			</tr>
+
+			<tr ng-repeat="user in users | filter : searchtxt">
+
+				<td>{{user.name}}</td>
+				
+				<td>{{user.surname}}</td>
+
+				<td>{{user.age}}</td>
+
+			</tr>
+
+		</table>
+
 	</div>
-</section>
-
-
-
 
 </body>
+
 </html>

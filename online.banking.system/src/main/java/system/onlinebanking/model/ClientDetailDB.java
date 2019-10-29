@@ -6,7 +6,7 @@ import java.sql.Statement;
 
 import system.onlinebanking.enums.Gender;
 
-public class ClientDetailDB {
+public class ClientDetailDB  {
 	
 	String client = null;
 	
