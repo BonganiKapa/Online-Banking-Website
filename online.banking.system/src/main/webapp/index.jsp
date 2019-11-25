@@ -22,8 +22,8 @@ var sds = document.getElementById("dum");
   
 
 <div id="header">
-	<h1>First National Bank<span class="style1"></span></h1>
-    <h2>How can we help you</h2>
+	<h1>Happy Note Bank<span class="style1"></span></h1>
+    <h2>Making the Best out of your Notes</h2>
    <!-- <A href="index.html"><img src="images/146651.jpg" style="width:900px;height:350px;"></IMG></A> --> 
 </div>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -32,10 +32,10 @@ var sds = document.getElementById("dum");
       <img class="d-block w-100" src="..." alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/fnb-banner.png" alt="Second slide">
+      <img class="d-block w-100" src="..." alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/slow02.jpg" alt="Third slide">
+      <img class="d-block w-100" src="..." alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -68,16 +68,16 @@ var sds = document.getElementById("dum");
  
    <td width="299" valign="top">
     	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>Humble beginnings</h1><br>
-    	    <center><img src="images/fnb1.png" alt="business" width="196" height="106"></center><br>
-		    <p>FNB is the oldest bank in South Africa, and can be traced back to the Eastern Province Bank formed in Grahamstown in 1838.</p>
-		    <p>Today, FNB trades as a division of FirstRand Bank Limited. When looking at FNB's history, two things in particular stand out.</p>
-		    <p>The first is a story of survival - different circumstances in South Africa have posed many great challenges in our history, all of which FNB has successfully met.</p>
+    	    <center><img src="..." alt="business" width="196" height="106"></center><br>
+		    <p>Happy Note Bank is the oldest bank in South Africa, and can be traced back to the Eastern Province Bank formed in Grahamstown in 1838.</p>
+		    <p>Today, HNB trades as a division of Happy Note Bank Limited. When looking at HNB's history, two things in particular stand out.</p>
+		    <p>The first is a story of survival - different circumstances in South Africa have posed many great challenges in our history, all of which HNB has successfully met.</p>
 		    <p>This track record provides a strong foundation for our future challenges. The second is a story of people - our history</p>
 		    <p>has always been firmly influenced by the needs of the people we serve. The Acacia tree in our brand logo is a suitable representation of our history.</p>
 		    <p>Our roots run deep in South Africa, and we have grown thanks to our commitment to serving the needs of our clients and communities.
-			<p>A landmark development in FNB's history took place in 1998 when the financial services interests of Rand Merchant Bank Holdings and Anglo American were merged to form FirstRand Limited.<p/>
-			<p>In the process, FNB was delisted from the JSE on 22 May 1998 to become a wholly-owned subsidiary of FirstRand, which was listed on the JSE on 25 May 1998.</p.>
-			<p>On 30 June 1999, the banking interests of FirstRand formally merged into a single entity to form FirstRand Bank. FNB, WesBank and RMB now trade as divisions of FirstRand Bank.</p>
+			<p>A landmark development in HNB's history took place in 1998 when the financial services interests of National Bank Holdings and America Units were merged to form Happy NOte Limited.<p/>
+			<p>In the process, HNB was de-listed from the JSE on 22 May 1998 to become a wholly-owned subsidiary of Happy NOte, which was listed on the JSE on 25 May 1998.</p.>
+			<p>On 30 June 1999, the banking interests of Happy Note formally merged into a single entity to form Happy NOte Bank. HNB, WesternBank and RMDVD now trade as divisions of Happy Note Bank.</p>
 	    	
 	    </div>      
     </td>

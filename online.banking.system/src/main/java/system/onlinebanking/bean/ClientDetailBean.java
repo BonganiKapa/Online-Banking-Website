@@ -27,10 +27,25 @@ public class ClientDetailBean implements java.io.Serializable {
 	
 	
 	
-	public ClientDetailBean(Integer clientIndex, String firstName, String lastName, String idNum, String address,
-			String phone, String email, String password, String repassword, String gender) {
+
+public ClientDetailBean(Integer clientIndex, String firstName, String lastName, String address, String phone,
+			String email, String password, String repassword) {
 		super();
 		this.clientIndex = clientIndex;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.phone = phone;
+		this.email = email;
+		this.password = password;
+		this.repassword = repassword;
+	}
+	public ClientDetailBean() {
+	}
+	
+	public ClientDetailBean(String firstName, String lastName, String idNum, String address, String phone, String email,
+			String password, String repassword, String gender) {
+		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.idNum = idNum;
@@ -38,10 +53,9 @@ public class ClientDetailBean implements java.io.Serializable {
 		this.phone = phone;
 		this.email = email;
 		this.password = password;
-		this.repassword = password;
+		this.repassword = repassword;
 		this.gender = gender;
 	}
-	
 	@Id
 	@Column(name = "CLIENT_INDEX")
 	public Integer getClientIndex() {
@@ -122,7 +136,4 @@ public class ClientDetailBean implements java.io.Serializable {
 	public void setRepassword(String repassword) {
 		this.repassword = repassword;
 	}
-	
-	
-	
 }

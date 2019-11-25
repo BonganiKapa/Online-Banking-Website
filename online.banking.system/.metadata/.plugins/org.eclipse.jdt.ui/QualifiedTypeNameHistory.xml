@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Path"/>
-<fullyQualifiedTypeName name="system.onlinebanking.bean.ClientDetailBean"/>
 <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response.Status"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
@@ -22,4 +20,29 @@
 <fullyQualifiedTypeName name="java.util.logging.Level"/>
 <fullyQualifiedTypeName name="system.onlinebanking.bean.EntityManagerHelper"/>
 <fullyQualifiedTypeName name="javax.persistence.Query"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="system.onlinebanking.calculations.Balance"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.Environment"/>
+<fullyQualifiedTypeName name="org.hibernate.service.ServiceRegistry"/>
+<fullyQualifiedTypeName name="org.hibernate.boot.registry.StandardServiceRegistryBuilder"/>
+<fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+<fullyQualifiedTypeName name="org.hibernate.Session"/>
+<fullyQualifiedTypeName name="org.hibernate.classic.Session"/>
+<fullyQualifiedTypeName name="system.onlinebanking.model.DatabaseUtil"/>
+<fullyQualifiedTypeName name="system.onlinebanking.dao.ClientDAO"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="system.onlinebanking.bean.ClientDetailBean"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="system.onlinebanking.dao.LoginDAO"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="system.onlinebanking.bean.LoginBean"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

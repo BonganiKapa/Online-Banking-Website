@@ -16,12 +16,15 @@
 		<tr>
 			<td>
 				<form method="post" action="Register" >
-				  <table cellspacing="5" cellpadding="3">	
+				  <table cellspacing="5" cellpadding="3">
+				  <c:if test = "${clientDetailBean != null}">
+				  <input type = "hidden" name "clientIndex" value = "<c:out value = '${clientDetailBean.clientIndex}'/>"/>
+				   </c:if>	
 					
 					GENDER: 
 					<input type="radio" ng-model="myVar" value="female">FEMALE
 					<input type="radio" ng-model="myVar" value="male">MALE				
-					<tr><td>NAME:</td><td> <input type="text" name="name" placeholder="Name(s)"/></td></tr>
+					<tr><td>NAME:</td><td> <input type="text" name="name" placeholder="Name(s)" size "50" value = "<c.out value = '${clientDetailBean.firstName}'/>"/></td></tr>
 					<tr><td>SURNAME:</td><td> <input type="text" name="surname" placeholder="Surname"/></td></tr>
 					<tr><td>ID NUMBER:</td><td> <input type="text" name="idNum" placeholder="ID Number"/></td></tr>
 					<tr><td>EMAIL:</td><td> <input type="text" name="email" placeholder="Email"/></td></tr>
