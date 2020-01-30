@@ -8,13 +8,13 @@
 <body>
 
 
-<section *ngIf="client" class="panel">
+<section *ngIf="client" class="panel" action = "update">
 	<div class = "panel-body">
 		<h4><i [class]="client.gender==='female' ? 'ion-female' : (client.gender==='male' ? 'ion-male' : 'ion-transgender')"></i> {{client.name}}</h4>
 		<i class="ion-android-calendar"></i> {{client.birthyear}}
-		<br/><strong>Name: </strong>{{client.name}} <strong>Surname: </strong>{{client.lastName}}
-		<br/><strong>Address: </strong>{{client.address}} <strong>Phone: </strong>{{client.phone}}
-		<br/><strong>Email: </strong>{{client.email}}
+		<br/><strong>Name:  <input type = "text" name = "firstName"></strong> <strong>Surname: <input type = "text" name = "lastName"></strong>
+		<br/><strong>Address: <input type = "text" name = "address"></strong> <strong>Phone: <input type = "text" name = "phone"></strong>
+		<br/><strong>Email: <input type = "text" name = "email"></strong>
 		<br/><button type="button" class="btn" (click)="gotoEdit()">Edit</button>
 	</div>
 </section>

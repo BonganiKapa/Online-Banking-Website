@@ -4,10 +4,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+//import javax.xml.bind.annotation.XmlRootElement;
 
 
-@XmlRootElement
+//@XmlRootElement
 @Entity
 @Table(name = "CLIENT_DETAILS" )
 public class ClientDetailBean implements java.io.Serializable {
