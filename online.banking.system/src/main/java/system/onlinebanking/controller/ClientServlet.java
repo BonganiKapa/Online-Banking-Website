@@ -16,7 +16,7 @@ import system.onlinebanking.dao.ClientDAO;
 /**
  * Servlet implementation class ClientServlet
  */
-@WebServlet("/")
+@WebServlet("/ClientServlet")
 public class ClientServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

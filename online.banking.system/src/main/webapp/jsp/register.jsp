@@ -15,23 +15,24 @@
 		</tr>
 		<tr>
 			<td>
-				<form method="post" action="register" >
+				<form action="ClientServlet" method="post" >
 				  <table cellspacing="5" cellpadding="3">
 					
 					GENDER: 
 					<input type="radio" ng-model="myVar" value="female" name ="gender">FEMALE
 					<input type="radio" ng-model="myVar" value="male" name ="gender">MALE				
-					<tr><td>NAME:</td><td> <input type="text" name="firstName"/></td></tr>
-					<tr><td>SURNAME:</td><td> <input type="text" name="lastName"/></td></tr>
-					<tr><td>ID NUMBER:</td><td> <input type="text" name="idNum"/></td></tr>
-					<tr><td>EMAIL:</td><td> <input type="text" name="email"/></td></tr>
-					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
-					<tr><td>RE-PASSWORD:</td><td> <input type="password" name="repassword"/></td></tr>
-					<tr><td>ADDRESS:</td><td> <input type="text" name="address"/></td></tr>
-					<tr><td>PHONE:</td><td> <input type="text" name="phone"/></td></tr>					
-					<tr><td></td><td><input type="submit" value="Submit"/>
+					NAME: <input type="text" name="firstName" required = "required"/>
+					SURNAME: <input type="text" name="lastName" required = "required"/>
+					ID NUMBER: <input type="text" name="idNum" required = "required"/>
+					EMAIL: <input type="text" name="email" required = "required"/>
+					ADDRESS: <input type="text" name="address" required = "required"/>
+					PHONE: <input type="text" name="phone"/ required = "required">
+					PASSWORD: <input type="password" name="password" required = "required"/>
+					RE-PASSWORD: <input type="password" name="repassword"/></td></tr>
+										
+					<input type="submit" value="REGISTER"/>
 					
-					<INPUT TYPE=RESET VALUE="Clear"></td></tr>
+					<input TYPE=RESET  VALUE="Clear"></td></tr>
 					</table>
                		</form>
 			</td>

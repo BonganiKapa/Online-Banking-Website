@@ -19,6 +19,14 @@
   	<url-pattern>/homepg</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  <servlet-name>reg</servlet-name>
+  <servlet-class>system.onlinebanking.controller.RegisterClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>reg</servlet-name>
+  <url-pattern>/jsp/regsister</url-pattern> 
+  </servlet-mapping>
 	
   <servlet>
   	<servlet-name>bongani</servlet-name>
@@ -80,7 +88,6 @@
   	<servlet-class>system.onlinebanking.controller.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>bonani1</servlet-name>
   	<url-pattern>/login</url-pattern>
   </servlet-mapping>
   
@@ -90,8 +97,18 @@
   	<servlet-name>bongani2</servlet-name>
   	<servlet-class>system.onlinebanking.controller.DepositeServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>RegisterClient</display-name>
+  	<servlet-name>RegisterClient</servlet-name>
+  	<servlet-class>system.onlinebanking.controller.RegisterClient</servlet-class>
+  </servlet>
   <servlet-mapping>
-  	<servlet-name>bonani2</servlet-name>
   	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterClient</servlet-name>
+  	<url-pattern>/RegisterClient</url-pattern>
   </servlet-mapping> 
 </web-app>
